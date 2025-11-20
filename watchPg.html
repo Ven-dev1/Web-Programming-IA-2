@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watchPg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Instrument+Serif:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Watches</title>
+</head>
+<body>
+    <header id="headerSection">
+        <img src="Assets/rendezvous logo.png" alt="Company Logo" id="logoImage" height="100px" width="100px">
+        <nav>
+            <a href="homePg.html"><button>Home</button></a>
+            <a href="jetPg.html"><button>Jets</button></a>
+            <a href="watchPg.html"><button>Watches</button></a>
+            <a href="#contact"><button>ABOUT</button></a>
+             <a href="loginPg.html" ><button id="loginBtn">Login</button></a>
+        </nav>
+        <div>
+                    <div class="dropdown">
+                        <p id="greeting"></p>
+                        <div class="dropdown-Content">
+                            <a href="#" id="logoutBtn" onclick="logout()">Logout</a>
+                        </div>
+                    </div>
+                   
+                        <a href="cartPg.html"><img src="Assets/cart icon.png" width="30px" height="30px"></a>
+                        <span id="cartCount" class="hidden"></span>
+                    
+        </div>
+    </header>
+    <main class="container">
+
+        <section id="welcomeSection">
+            <p>Explore our exclusive range of luxury watches.</p>
+        </section>
+
+        <section id="watchCollection">
+
+            <section id="options">
+                <div id="optionList">
+                    <div class="filter">
+                        <h2>Filter by Brand</h2>
+                        
+                           <label for="Audemars Piguet">Audemars Piguet</label> <input type="checkbox" id="Audemars Piguet" name="Audemars Piguet" class="filterOption"><br>
+                            <label for="Rolex" >Rolex</label><input type="checkbox" id="Rolex" name="Rolex"class="filterOption"><br>
+                            <label for="Patek Philippe" >Patek Philippe</label><input type="checkbox" id="Patek Philippe" name="Patek Philippe"class="filterOption"><br>
+                            <label for="Omega">Omega</label><input type="checkbox" id="Omega" name="Omega"class="filterOption"><br>
+                            <label for="TAG Heuer">TAG Heuer</label><input type="checkbox" id="TAG Heuer" name="TAG Heuer"class="filterOption"><br>
+                            <label for="Breitling">Breitling</label><input type="checkbox" id="Breitling" name="Breitling"class="filterOption">
+                    </div>                   
+                </div>
+            </section >
+
+            <section id="watchDisplay">
+                <div id="watchList">
+                    <div class="watchItem" data-id="1">
+                        <img src="Assets/royal oak offshore.jpg" alt="Luxury Watch 1" height="200px" width="200px">
+                        <h3>Royal Oak Offshore</h3>
+                        <p>Audemars Piquet</p>
+                        <p>Price: $5,000</p>
+                        <button class="addBtn">
+                            Add to cart
+                            <!--<img src="Assets/add to cart.png" alt="add to cart icon" class="cartIcon">-->
+                        </button>
+                    </div>
+                    <div class="watchItem" data-id="2">
+                        <img src="Assets/rolex submariner.jpg" alt="Luxury Watch 2" height="200px" width="200px">
+                        <h3>Submariner</h3>
+                        <p>Rolex</p>
+                        <p>Price: $7,500</p>
+                        <button class="addBtn">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="watchItem" data-id="3">
+                        <img src="Assets/Patek Philippe Nautilus.jpg" alt="Luxury Watch 3" height="200px" width="200px">
+                        <h3>Nautilus</h3>
+                        <p>Patek Philippe</p>
+                        <p>Price: $10,000</p>
+                        <button class="addBtn">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="watchItem" data-id="4">
+                        <img src="Assets/OMEGA Seamaster.jpg" alt="Luxury Watch 3" height="200px" width="200px">
+                        <h3>Seamaster</h3>
+                        <p>Omega</p>
+                        <p>Price: $10,000</p>
+                        <button class="addBtn">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="watchItem" data-id="5">
+                        <img src="Assets/TAG Heuer Carrera.jpg" alt="Luxury Watch 3" height="200px" width="200px">
+                        <h3>Carrera</h3>
+                        <p>TAG Heuer</p>
+                        <p>Price: $10,000</p>
+                        <button class="addBtn">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="watchItem" data-id="6">
+                        <img src="Assets/navitimer.jpg" alt="Luxury Watch 3" height="200px" width="200px">
+                        <h3>Navitimer</h3>
+                        <p>Breitling</p>
+                        <p>Price: $10,000</p>
+                        <button class="addBtn">
+                            Add to cart
+                        </button>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+        </section>
+
+        
+    </main>
+    
+    <footer id="contact">
+        <div id="info">
+            <p>Contact us:</p>
+            <p><a href="mailto:seangroves9@gmail.com">Email: Rendezvous@gmail.com</a></p>
+            <p>Phone: +44 1234 567890</p>
+        </div>
+        <div>
+        <a href="https://www.facebook.com/"><img class="footericons" src="Assets/fbIconBW.png" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com/"><img class="footericons" src="Assets/igIconBW.png" alt="Instagram Icon"></a> 
+        <a href="https://x.com/"><img class="footericons" src="Assets/twitterIconBW.png" alt="Twitter Icon"></a> 
+        </div>
+
+        <p>Sean Groves #2303829</p>
+        <p><a href="mailto:seanmgroves@students.utech.edu.jm">Email: seanmgroves@students.utech.edu.jm</a></p>
+        <p>CIT2011 WED@10pm</p>
+        <p>Web Programming Individual Assignment 2</p>
+        <p>&copy; 2025 Redezvous. All rights reserved.</p>
+    </footer>
+    <script src="watchPg.js"></script>
+       
+</body>
+</html>

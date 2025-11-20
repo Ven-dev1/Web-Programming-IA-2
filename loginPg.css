@@ -1,0 +1,104 @@
+body{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    background-color: #0d0d0d;
+    color: #aa9048;
+}
+
+#divide{
+    width: 2px;
+    background-color: #aa9048;
+    margin: 0 20px;
+}
+#formContainer{
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+}
+
+form{
+    display: inline-block;
+    text-align: left;
+    margin: 30px;
+    width: fit-content;
+}
+
+#loginForm, #registerForm{
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+#loginForm h1, #registerForm h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lofinForm{
+    height: fit-content;
+}
+
+input{
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #aa9048;
+    color: #aa9048;
+}
+
+input::placeholder{
+    padding: 10px;
+    color: #aa9048aa;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #aa9048;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.visible {
+    display: block;
+    border: 1px solid #aa9048;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+
+#change, #backToLogin{
+    background: none;
+    border:none;
+    border-radius: 20px;
+    color: #aa9048;
+    font-family: "Quicksand", sans-seri;
+    font-weight: 700;
+    font-size: larger;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#change:hover, #backToLogin:hover{
+    text-shadow: #aa9048 0px 0px 10px;
+}
+
+#loginBtn, #registerBtn{
+    background-color: #aa9048;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#loginBtn:hover, #registerBtn:hover{
+    background-color:black;
+    color: #aa9048;
+    border: 2px solid #aa9048;
+}
